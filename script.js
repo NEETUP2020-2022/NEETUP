@@ -5,7 +5,7 @@ var d = document, aEL = "addEventListener", qS = "querySelector", qSA = "querySe
     storyBox = d[qSA](".calldata"), allStory = d[qSA](".story"), mainBtn = d[qS]("#to_main"), introBtn = d[qS]("#to_intro"), closeBtn = d[qSA](".closebtn"),
     box1 = d[qS]("#box1"), box2 = d[qS]("#box2"), box3 = d[qS]("#box3"), box4 = d[qS]("#box4");
 
-box2.onmouseenter = function () {
+/*box2.onmouseenter = function () {
     box1.classList.add("delay");
 };
 box2.onmouseout = function () {
@@ -16,7 +16,7 @@ box4.onmouseenter = function () {
 };
 box4.onmouseout = function () {
     box3.classList.remove("delay");
-};
+};*/
 window.onkeydown = function (e) {
     if (overlay.classList.contains("active") && e.key === "Escape") {
         d.body.style.overflow = "auto";
