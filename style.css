@@ -56,7 +56,7 @@ article{
     display: inline-block;
     font-size: 1.25em;
     color: #FFF;
-    width: 10em;
+    width: fit-content;
     position: relative;
 }
 
@@ -121,7 +121,17 @@ article{
 	margin-left: -23px;
 }
 
-#box1:hover div, #box2:hover div, #box3:hover div, #box4:hover div{
+#box12:hover > div > div{
+	opacity: 1;
+	transition: 0.5s;
+}
+
+#box34:hover > div > div{
+	opacity: 1;
+	transition: 0.5s;
+}
+
+/*#box1:hover div, #box2:hover div, #box3:hover div, #box4:hover div{
 	opacity: 1;
 	transition: 0.5s;
 }
@@ -129,7 +139,7 @@ article{
 #box1:hover+#box2>div, #box3:hover+#box4>div, #box1.delay>div, #box3.delay>div{
     opacity: 1;
 	transition: 0.5s 0.2s;
-}
+}*/
 
 #box5, #box6, #box7, #box8, #box9, #box10{
 	background-size: cover !important;
